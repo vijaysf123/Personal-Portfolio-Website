@@ -316,13 +316,15 @@ nav .fa{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+/************Mobile devices************/
+
+@media only screen and (max-width: 650px){
     .header{
         background-image: url("images/phone-background.png");
         background-position: right;
     }
     .header_text{
-        margin-top: 100%;
+        margin-top: 60%;
     }
     .header_text p{
         font-size: 1rem;
@@ -331,7 +333,8 @@ nav .fa{
         margin-bottom: 1rem;
     }
     .header_text h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
+        color: #ff00f4;
     }
     nav .fa{
         display: block;
@@ -362,6 +365,9 @@ nav .fa{
             display: flex;
             flex-direction: column;
         }
+        .about{
+            padding: 2.8rem 0;
+        }
         .about .row .about-col-1{
             width: 100%;
         }
@@ -386,6 +392,75 @@ nav .fa{
         .contacts{
             margin-bottom: 3rem;
         }
+}
+
+/************Tab devices************/
+
+@media (min-width: 651px) and (max-width: 850px){
+    .container{
+        padding: 5px 5%;
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        position: relative;
+    }
+    nav ul li{
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        margin: 10px 10px;
+    }
+    .header_text h1{
+        font-size: 1.8rem;
+    }
+    .header_text p{
+        font-size: 1rem;
+        border-bottom: 2px solid #f00;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+    .header_text{
+        margin-top: 50%;
+    }
+    .about{
+        padding: 2.8rem 0;
+    }
+    .about .row{
+        display: flex;
+    }
+    .about .row .about-col-1{
+        width: 80%;
+    }
+    .about .row .about-col-2 h1{
+        font-size: 1.7rem;
+        margin-top: 2rem;
+        margin-inline: auto;
+    }
+    .about .row .about-col-2 p{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+    .about .row .about-col-2 .tab_contents{
+        font-size: 1.2rem;
+    }
+    .tab_contents{
+        margin-top: -10%;
+    }
+    form input , form textarea{
+        width: 80%;
+        margin: 1rem 2rem;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
 }
 
 #msg{
